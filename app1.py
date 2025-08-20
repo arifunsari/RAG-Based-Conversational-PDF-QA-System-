@@ -5,7 +5,7 @@ from chromadb import PersistentClient
 import tempfile
 
 # ---------- CONFIGURE GEMINI ----------
-genai.configure(api_key="AIzaSyDHHt6MMi4dm63IPGp3Q-cB5B5mDsJDTTo")
+genai.configure(api_key="Your_API_KEY")
 generation_model = genai.GenerativeModel("gemini-2.0-flash")
 
 # ---------- LOAD PDF ----------
@@ -151,3 +151,4 @@ if uploaded_file is not None:
             st.markdown(answer)
 
         st.session_state.chat_history.append({"question": prompt, "answer": answer})
+
